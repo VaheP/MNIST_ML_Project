@@ -23,7 +23,7 @@ This project is designed to handle, process, and classify images from the Fashio
 To run the project, follow these steps:
 
 1. **Set up the environment**:
-    - Ensure Python and necessary packages (`sklearn`, `pandas`, `numpy`) are installed.
+    - Ensure Python and necessary packages (`sklearn`, `pandas`, `numpy`, `xgboost`) are installed.
     - Install dependencies: `pip install -r requirements.txt`.
 
 2. **Configure paths and parameters**:

@@ -7,18 +7,35 @@ MODEL_PARAMS = {
         'max_depth': 10
     },
     'logistic_regression': {
-        'C': 1.0,
+        'C': 10,
         'penalty': 'l2',
-        'solver': 'lbfgs'
+        'solver': 'newton-cg'
     },
     'knn': {
         'n_neighbors': 5,
-        'leaf_size': 30,
-        'weights': 'uniform'
+        'leaf_size': 15,
+        'weights': 'distance'
     },
     'svm': {
         'C': 1.0,
         'kernel': 'rbf',
         'gamma': 'scale'
+    },
+    'bagging': {
+        'n_estimators': 10,
+        'n_neighbors': 5,
+        'leaf_size': 15,
+        'weights': 'distance',
+        'bootstrap': True,
+    },
+    'adaboost': {
+        'n_estimators': 50,
+        'learning_rate': 1
+    },
+    'xgboost': {
+        'n_estimators': 200,
+        'max_depth': 6,
+        'learning_rate': 0.5,
+        'gamma': 0.1
     }
 }
