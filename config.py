@@ -17,9 +17,9 @@ MODEL_PARAMS = {
         'weights': 'distance'
     },
     'svm': {
-        'C': 1.0,
+        'C': 10,
         'kernel': 'rbf',
-        'gamma': 'scale'
+        'gamma': 0.01
     },
     'bagging': {
         'n_estimators': 10,
