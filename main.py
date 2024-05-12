@@ -8,8 +8,8 @@ def main():
     data_handler = DataHandler(config.DATA_PATH, config.DATA_PATH_TEST)
     data_handler.load_data()
     data_handler.split_data()
-
-    model = RandomForestModel(**config.MODEL_PARAMS)
+    data_handler.preprocess_data()
+    model = RandomForestModel(**config.MODEL_PARAMS['random_forest'])
     trainer = Trainer(model)
 
     trainer.train(data_handler.X_train, data_handler.y_train)
