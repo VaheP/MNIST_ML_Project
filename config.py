@@ -11,4 +11,14 @@ MODEL_PARAMS = {
         'penalty': 'l2',
         'solver': 'lbfgs'
     },
+    'knn': {
+        'n_neighbors': 5,
+        'leaf_size': 30,
+        'weights': 'uniform'
+    },
+    'svm': {
+        'C': 1.0,
+        'kernel': 'rbf',
+        'gamma': 'scale'
+    }
 }
