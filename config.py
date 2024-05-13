@@ -22,15 +22,15 @@ MODEL_PARAMS = {
         'gamma': 0.01
     },
     'bagging': {
-        'n_estimators': 10,
+        'n_estimators': 50,
         'n_neighbors': 5,
-        'leaf_size': 15,
+        'leaf_size': 45,
         'weights': 'distance',
         'bootstrap': True,
     },
     'adaboost': {
         'n_estimators': 50,
-        'learning_rate': 1
+        'learning_rate': 0.5
     },
     'xgboost': {
         'n_estimators': 200,
